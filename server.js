@@ -7,7 +7,8 @@ const app = express();
 const PORT = 5003; // Port specified directly
 
 // Middleware
-app.use(cors({ origin: 'http://13.201.18.71:3000' })); // Allow requests from your frontend's IP
+app.use(cors({ origin: 'http:128.168.0.1:3000' })); 
+// Allow requests from your frontend's IP
 app.use(express.json()); // Parse JSON requests
 
 // Root route
