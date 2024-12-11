@@ -16,9 +16,11 @@ app.get('/', (req, res) => {
   res.send('Backend server is running!');
 });
 
+
 // MongoDB connection
 mongoose.connect('YOUR Connection URL')
   .then(() => console.log('MongoDB connected'))
+  
   .catch(err => console.error('MongoDB connection error:', err));
 
 // Define schemas
