@@ -5,12 +5,10 @@ const bcrypt = require('bcryptjs');
 
 const app = express();
 const PORT = 5003; // Port specified directly
-
 // Middleware
-app.use(cors({ origin: 'http:128.168.0.1:3000' })); 
+app.use(cors({ origin: '' })); 
 // Allow requests from your frontend's IP
 app.use(express.json()); // Parse JSON requests
-
 // Root route
 app.get('/', (req, res) => {
   res.send('Backend server is running!');
